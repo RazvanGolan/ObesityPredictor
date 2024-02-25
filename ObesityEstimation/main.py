@@ -27,14 +27,14 @@ y_pred_test = np.dot(X_test_scaled, theta_final)  # Making the predictions
 
 mse, rmse = MyLinearRegression.evaluate_model(y_test, y_pred_test)
 
-print("Testing MSE My Model:", mse)
-print("Testing RMSE My Model:", rmse)
+print("Testing MSE Custom Model:", mse)
+print("Testing RMSE Custom Model:", rmse)
 
 mae_test = MyLinearRegression.mean_absolute_error(y_test, y_pred_test)
-print("Testing MAE My Model:", mae_test, '\n')
+print("Testing MAE Custom Model:", mae_test, '\n')
 
 theta_final = theta_final.reshape(theta_final.size, )
-print('Coefficients My Model: \n', theta_final, '\n')
+print('Coefficients Custom Model: \n', theta_final, '\n')
 
 features = ['Gender', 'Age', 'Height', 'Weight', 'Family History', 'High caloric\nfood frequently', 'Smoking',
             'Water intake', 'Monitor Calories', 'Physical activity', 'Alcohol']
@@ -43,7 +43,7 @@ plt.figure(figsize=(10, 6))
 plt.barh(features, theta_final)
 plt.xlabel('Features')
 plt.ylabel('Importance')
-plt.title('My Linear Regression Model')
+plt.title('Custom Linear Regression Model')
 
 plt.show()
 
