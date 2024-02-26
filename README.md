@@ -55,6 +55,13 @@ The custom linear regression model achieved comparable results to Scikit-learn's
 
 <img width="671" alt="Screenshot 2024-02-25 at 16 53 39" src="https://github.com/RazvanGolan/ObesityPredictor/assets/117024228/c3c763d2-c8b4-4361-99b6-8126a3cfddf1">
 
+### Most Important Attribute for Predicting Obesity
+- In the custom linear regression model, the most important attribute for predicting obesity levels was <b>Weight</b>. However, in Scikit-learn's linear regression model, the most significant attribute was <b>Family history with obesity</b>. This distinction highlights the importance of different features in predicting obesity levels and underscores the value of feature analysis and selection in model development.
+
+### Least Impactful Attribute for Preventing Obesity
+- In the custom linear regression model, the least important attribute for predicting obesity levels was <b>Height</b>. This suggests that as the height decreases, the predicted obesity level tends to increase. In other words, shorter individuals may have a higher predicted obesity level compared to taller individuals in the dataset.
+- In Scikit-learn's linear regression model, the least significant attribute was <b>Monitoring Calories</b>. This suggests that individuals who monitor their calorie intake less tend to have higher predicted obesity levels. It implies that being less vigilant about calorie consumption is associated with a higher likelihood of obesity in the dataset.
+#### It's important to note that these interpretations are based on the specific dataset and model used. Real-world relationships may be influenced by various factors, and causality cannot be inferred solely based on regression coefficients. Further analysis and domain knowledge are necessary to validate these findings.
 
 ## Possible Improvements
 - Explore more advanced feature selection methods
